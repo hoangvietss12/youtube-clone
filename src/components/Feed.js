@@ -17,6 +17,7 @@ function Feed() {
             })
     }, [selectedCategory])
 
+
     return ( 
         <Stack
             sx={{ flexDirection: { sx: 'column', md: 'row' } }}
@@ -37,7 +38,7 @@ function Feed() {
             </Box>
 
             <Box
-                sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}
+                sx={{ overflowY: 'auto', height: '90vh', flex: 2, ml: 1 }}
             >
                 <Typography
                     variant="h4"

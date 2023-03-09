@@ -9,7 +9,7 @@ function VideoCard({ video: { id: {videoId}, snippet } }) {
 
 
     return ( 
-        <Card sx={{ width: { md: '320px', xs: '100%' }, borderRadius: 0, boxShadow: 'none' }}>
+        <Card sx={{ width: { md: '310px', xs: '100%' }, borderRadius: 0, boxShadow: 'none' }}>
             <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
                 <CardMedia 
                     image={snippet?.thumbnails?.high?.url}
@@ -18,7 +18,7 @@ function VideoCard({ video: { id: {videoId}, snippet } }) {
                 />
             </Link>
 
-            <CardContent sx={{ background: '#1e1e1e', height: '106px' }}>
+            <CardContent sx={{ background: '#1e1e1e', height: '90px' }}>
                 <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
                     <Typography fontWeight="bold" color="#fff" variant="subtitle1">
                         {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
@@ -26,7 +26,7 @@ function VideoCard({ video: { id: {videoId}, snippet } }) {
                 </Link>
 
                 <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
-                    <Typography fontWeight="bold" color="gray" variant="subtitle1">
+                    <Typography color="gray" variant="subtitle1">
                         {snippet?.channelTitle || demoChannelTitle}
                         <CheckCircle sx={{ fontSize: 12, color: 'gray', ml: '5px' }} />
                     </Typography>

@@ -10,6 +10,7 @@ function SideBar({ selectedCategory, setSelectedCategory }) {
             sx={{
                 overflow: 'auto',
                 height: { sx: 'auto', md: '95%'},
+                width: { sx: 'auto', md: '170px'},
                 flexDirection: {md: 'column'}
             }}
         >
