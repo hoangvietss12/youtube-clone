@@ -6,7 +6,6 @@ import SideBar from "./SideBar";
 import Videos from "./Videos";
 
 function Feed() {
-
     const [selectedCategory, setSelectedCategory] = useState('New')
     const [videos, setVideos] = useState([])
 
